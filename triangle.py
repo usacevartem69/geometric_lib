@@ -12,9 +12,13 @@ def area(a, h):
         Пример:
                 area(3,4) = 3 * 4 / 2 = 6
     '''
+    if(a < 0 or h < 0):
+        return False
     return a * h / 2 
 
 def perimeter(a, b, c): 
+    if(a > b + c or b > a + c or c > a + b):
+        return False
     '''
     Возращает периметр треугольника со сторонами a, b, c.
 
@@ -29,4 +33,5 @@ def perimeter(a, b, c):
         Пример:
                 perimeter(3, 4, 5) = 3 + 4 + 5 = 12
     '''
+
     return a + b + c 

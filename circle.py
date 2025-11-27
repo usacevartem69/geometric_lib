@@ -14,6 +14,9 @@ def area(r):
         Пример:
                 area(5) = math.pi * 5 * 5 = 78.53981633974483
     '''
+    res = math.pi * r * r
+    if r < 0:
+        return False
     return math.pi * r * r
 
 def perimeter(r):
@@ -29,5 +32,7 @@ def perimeter(r):
         Пример:
                 perimeter(5) = 2 * math.pi * 5 = 31.41592653589793
     '''
+    if(r < 0):
+        return False
     return 2 * math.pi * r
 

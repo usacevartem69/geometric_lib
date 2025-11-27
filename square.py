@@ -13,6 +13,8 @@ def area(a):
                 area(3) = 3 * 3 = 9
 
     '''
+    if(a < 0):
+        return False
     return a * a
 
 
@@ -30,4 +32,6 @@ def perimeter(a):
                 perimeter(3) = 4 * 3 = 12
 
     '''
+    if(a < 0):
+        return False
     return 4 * a
