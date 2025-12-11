@@ -1,5 +1,5 @@
 import unittest
-import rectangle 
+from geometric_lib.rectangle import area, perimeter 
 
 class RectangleTestCase(unittest.TestCase):
     def test_zero_mul(self):

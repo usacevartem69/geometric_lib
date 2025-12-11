@@ -1,5 +1,5 @@
 import unittest
-import triangle
+from geometric_lib.triangle import area, perimeter
 
 class TriangleTestCase(unittest.TestCase):
     def test_zero_area(self):
@@ -16,7 +16,6 @@ class TriangleTestCase(unittest.TestCase):
         res = triangle.perimeter(0,0,0)
         self.assertEqual(res, 0)
     
-
     def test_neravenstvo_triangle(self):
         self.assertFalse(triangle.perimeter(10, 4, 5))
         self.assertFalse(triangle.perimeter(1, 100, 1))

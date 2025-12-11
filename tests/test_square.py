@@ -1,5 +1,5 @@
 import unittest
-import square
+from geometric_lib.square import area, perimeter
 
 class SquareTestCase(unittest.TestCase):
     def test_zero_area(self):
